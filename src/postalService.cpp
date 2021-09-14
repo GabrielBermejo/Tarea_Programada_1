@@ -43,7 +43,7 @@ float PostalService::ShippingCost() {
                 }
             }
         break;
-    case 3:
+    default:
         if (weight<4)
         {
             cost=distance*0.0150;
