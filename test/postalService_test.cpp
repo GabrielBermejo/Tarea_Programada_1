@@ -32,7 +32,7 @@ namespace {
 //Second Weight Class / First Class Fee Cost Test
 namespace {
     TEST(postalServiceTest, ShippingCost_Test_2_1) {
-        PostalService postser {4, 1, 1};
+        PostalService postser {1, 4, 1};
         float result = postser.ShippingCost();
 
         EXPECT_EQ(0.450, result);
@@ -42,7 +42,7 @@ namespace {
 //Second Weight Class / Second Class Fee Cost Test
 namespace {
     TEST(postalServiceTest, ShippingCost_Test_2_2) {
-        PostalService postser {4, 1, 2};
+        PostalService postser {1, 4, 2};
         float result = postser.ShippingCost();
 
         EXPECT_EQ(0.0450, result);
@@ -52,7 +52,7 @@ namespace {
 //Second Weight Class / Third Class Fee Cost Test
 namespace {
     TEST(postalServiceTest, ShippingCost_Test_2_3) {
-        PostalService postser {4, 1, 3};
+        PostalService postser {1, 4, 3};
         float result = postser.ShippingCost();
 
         EXPECT_EQ(0.0160, result);
@@ -62,7 +62,7 @@ namespace {
 //Third Weight Class / First Class Fee Cost Test
 namespace {
     TEST(postalServiceTest, ShippingCost_Test_3_1) {
-        PostalService postser {9, 1, 1};
+        PostalService postser {1, 9, 1};
         float result = postser.ShippingCost();
 
         EXPECT_EQ(0.500, result);
@@ -72,7 +72,7 @@ namespace {
 //Third Weight Class / Second Class Fee Cost Test
 namespace {
     TEST(postalServiceTest, ShippingCost_Test_3_2) {
-        PostalService postser {9, 1, 2};
+        PostalService postser {1, 9, 2};
         float result = postser.ShippingCost();
 
         EXPECT_EQ(0.0500, result);
@@ -82,7 +82,7 @@ namespace {
 //Third Weight Class / Third Class Fee Cost Test
 namespace {
     TEST(postalServiceTest, ShippingCost_Test_3_3) {
-        PostalService postser {9, 1, 3};
+        PostalService postser {1, 9, 3};
         float result = postser.ShippingCost();
 
         EXPECT_EQ(0.0170, result);
