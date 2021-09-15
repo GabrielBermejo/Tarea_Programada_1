@@ -7,7 +7,7 @@ namespace {
         PostalService postser {1, 1, 1};
         float result = postser.ShippingCost();
 
-        EXPECT_EQ(0.195, result);
+        EXPECT_FLOAT_EQ(0.195, result);
     }
 }
 //First Weight Class / Second Class Fee Cost Test
@@ -16,7 +16,7 @@ namespace {
         PostalService postser {1, 1, 2};
         float result = postser.ShippingCost();
 
-        EXPECT_EQ(0.0195, result);
+        EXPECT_FLOAT_EQ(0.0195, result);
     }
 }
 //First Weight Class / Third Class Fee Cost Test
@@ -25,7 +25,7 @@ namespace {
         PostalService postser {1, 1, 3};
         float result = postser.ShippingCost();
 
-        EXPECT_EQ(0.0150, result);
+        EXPECT_FLOAT_EQ(0.0150, result);
     }
 }
 
@@ -35,7 +35,7 @@ namespace {
         PostalService postser {1, 4, 1};
         float result = postser.ShippingCost();
 
-        EXPECT_EQ(0.450, result);
+        EXPECT_FLOAT_EQ(0.450, result);
     }
 }
 
@@ -45,7 +45,7 @@ namespace {
         PostalService postser {1, 4, 2};
         float result = postser.ShippingCost();
 
-        EXPECT_EQ(0.0450, result);
+        EXPECT_FLOAT_EQ(0.0450, result);
     }
 }
 
@@ -55,7 +55,7 @@ namespace {
         PostalService postser {1, 4, 3};
         float result = postser.ShippingCost();
 
-        EXPECT_EQ(0.0160, result);
+        EXPECT_FLOAT_EQ(0.0160, result);
     }
 }
 
@@ -65,7 +65,7 @@ namespace {
         PostalService postser {1, 9, 1};
         float result = postser.ShippingCost();
 
-        EXPECT_EQ(0.500, result);
+        EXPECT_FLOAT_EQ(0.500, result);
     }
 }
 
@@ -75,7 +75,7 @@ namespace {
         PostalService postser {1, 9, 2};
         float result = postser.ShippingCost();
 
-        EXPECT_EQ(0.0500, result);
+        EXPECT_FLOAT_EQ(0.0500, result);
     }
 }
 
@@ -85,6 +85,6 @@ namespace {
         PostalService postser {1, 9, 3};
         float result = postser.ShippingCost();
 
-        EXPECT_EQ(0.0170, result);
+        EXPECT_FLOAT_EQ(0.0170, result);
     }
 }
