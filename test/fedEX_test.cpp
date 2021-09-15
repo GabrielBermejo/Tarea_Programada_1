@@ -7,7 +7,7 @@ namespace {
         FedEX fedex {666, 7};
         float result = fedex.ShippingCost();
 
-        EXPECT_EQ(28, result);
+        EXPECT_FLOAT_EQ(28, result);
     }
 }
 //Distance Below Threshold Test
@@ -16,7 +16,7 @@ namespace {
         FedEX fedex {300, 5};
         float result = fedex.ShippingCost();
 
-        EXPECT_EQ(23, result);
+        EXPECT_FLOAT_EQ(23, result);
     }
 }
 //Weight Below Threshold Test
@@ -25,7 +25,7 @@ namespace {
         FedEX fedex {913, 3};
         float result = fedex.ShippingCost();
 
-        EXPECT_EQ(25, result);
+        EXPECT_FLOAT_EQ(25, result);
     }
 }
 //Both Values Below Threshold
@@ -34,6 +34,6 @@ namespace {
         FedEX fedex {3, 1};
         float result = fedex.ShippingCost();
 
-        EXPECT_EQ(20, result);
+        EXPECT_FLOAT_EQ(20, result);
     }
 }
